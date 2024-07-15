@@ -5,23 +5,30 @@ body{
     margin: 0;
     }
 
-.nav-container{
+.navbar{
     background-color: #373A3C;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
+    
 }
 
-.nav-link{
-    text-decoration: none;
+.navbar-nav{
+    padding-right: 150px;
+}
+.navbar .nav-link{
+    color: #fff;
+    font-weight: lighter;
+}
+
+.navbar-brand {
+    flex-grow: 1;
+    text-align: center;
 }
 
 .menu{
     display: flex;
     gap: 50px;   
     margin: 0 60px;
-    padding-right: 150px;
+    padding-right: 500px;
 }
 
 .logo{
@@ -63,7 +70,7 @@ body{
     gap: 20px;
 }
 
-#boton-uno, #boton-dos{
+#boton-uno, #boton-dos, #boton-tres{
     color: #fff;
 }
 
@@ -94,6 +101,7 @@ body{
     flex-direction: column;
     text-align: center;
     width: 30%;
+    margin: 20px;
 }
 
 .icono{
@@ -108,12 +116,10 @@ body{
 .container-cards{
     display: flex;
     margin: 20px 30px;
-    padding: 20px;
-
 }
 
 .titulo-tres{
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .card{
     background-color: #17A2B8;
@@ -139,15 +145,36 @@ body{
 }
 .formulario{
     text-align: center;
-    
 }
 
 .contacto{
-    width: 800px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    width: 800px;
+    margin: auto auto;
 }
+
+.form-label{
+    font-weight: bold;
+    text-align: left;
+    display: block; /* Asegura que las etiquetas ocupen todo el ancho del contenedor */
+}
+
+.boton-enviar{
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;    
+    
+}
+
+.btn{
+    width: 100px;
+}
+
+.cuadro-texto{
+    resize: none;
+}
+
 footer{
     background-color: black;
     height: 60px;
